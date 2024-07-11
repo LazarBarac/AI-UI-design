@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+.gpt3__article-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: #031B34;
+}
+
+.gpt3__article-image {
+  width: 100%;
+  height: 100%;
+  background: #031B34;
+}
+.gpt3__article-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.gpt3__article-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 3rem 2rem;
+  font-family: "Manrope", sans-serif;
+}
+.gpt3__article-content div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+.gpt3__article-content div p {
+  font-size: 14px;
+  width: fit-content;
+}
+.gpt3__article-content div h3 {
+  margin-top: 2rem;
+  font-size: 24px;
+  line-height: 30px;
+  width: fit-content;
+}
+.gpt3__article-content div h3 span {
+  cursor: pointer;
+}
+.gpt3__article-content div h3 span:hover {
+  font-size: 28px;
+  font-weight: 600;
+}
+.gpt3__article-content p:last-child {
+  font-size: 14px;
+  cursor: pointer;
+  width: fit-content;
+}
+.gpt3__article-content p:last-child:hover {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1050px) {
+  .gpt3__article-container {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .gpt3__article-content {
+    padding-top: 1rem;
+  }
+  .gpt3__article-content div {
+    margin-bottom: 1rem;
+  }
+  .gpt3__article-content div h3 {
+    margin-top: 1rem;
+    align-self: center;
+  }
+  .gpt3__article-content p {
+    align-self: center;
+  }
+}
+@media screen and (max-width: 750px) {
+  .gpt3__article-content div h3 {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .gpt3__article-content div h3 {
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=article.css.map */

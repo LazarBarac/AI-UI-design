@@ -1,0 +1,13 @@
+@import '../../main';
+
+.gpt3__brands{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: $color-bg;
+    img{
+        height: 24.15px;
+        margin: 1rem 1.5rem;
+    }
+}

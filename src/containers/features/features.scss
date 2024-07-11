@@ -1,0 +1,83 @@
+@import '../../main';
+
+.gtp3__features{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.gpt3__features-container{
+    display: flex;
+    flex: 1.5;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.gpt3__features-heading{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 2rem;
+    h2{
+        font-family: $font-family;
+        font-size: 34px;
+        font-weight: 800;
+        line-height: 45px;
+        margin-bottom: 1.5rem; 
+    }
+    p{
+        font-family: $font-family;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 30px;
+        color: $color-subtext;
+        cursor: pointer;
+        width: fit-content;
+    }
+    p:hover{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .gtp3__features{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .gpt3__features-heading{
+        margin: 0;
+        margin-bottom: 1rem;
+        width: 100%;
+        p{
+            align-self: center;
+        }
+       
+    }
+}
+
+@media screen and (max-width: 750px){
+    .gpt3__features-heading{
+        h2 {
+            font-size: 26px;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 550px){
+    .gpt3__features-heading{
+        h2 {
+            font-size: 22px;
+        }
+        p{
+            font-size: 12px;
+        }
+    }
+}
